@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+     <!-- dynamic block for add the new TODO-list   -->
+    <div class="add-item-container" id="add-item-container">
+        <div class="add-item">
+            <input type="text" name="" id="add-item-title">
+            <button class="btn" id="add-list-button">Add List</button>
+        </div>
+    </div>
+
+    <!-- dynamic block for add the new TODO-list  -->
+    <div class="add-item-container" id="addlist-container">
+        <div class="add-item">
+            <input type="text" name="" id="addlist-item" placeholder="Add Your Wish List">
+            <button class="btn" id="addlist-button"> Add List </button>
+        </div>
+    </div>
+
+
+    <!-- title and header part container -->
+    <div class="title-container">
+        <div class="left">
+            <span style="font-weight: bolder; font-size:40px; color: #0b003d;"> TODO </span>
+            <span style="font-weight: lighter; font-size:40px; color: #1c009b;"> LISTS </span>
+        </div>
+        <div class="right">
+            <i class="fas fa-plus-circle fa-2x" id="add-list" style="color: rgb(167, 44, 0);"> 
+             <span style="color: black;"> Add List </span>
+            </i>
+        </div>
+    </div>
+
+    <!-- main display todo card div container  -->
+        <div class="card-container" id="card-container">
+        <div class="notecard">
+            <h3 class="card-text" style="text-align: center"> This is paris</h3>
+            <br>
+            <hr style="width: 90%;" class="right">
+            <br>
+            <ul class="list-add" id="list-add">
+                <input type="checkbox" name="" id="tickbox">
+                <li style="display: inline;"> going to shopping </li>
+            </ul>
+            <i class="fas fa-plus-circle add"></i>
+            <i class="fas fa-trash delete" id="${index}"></i>
+        </div>
+
+    </div> 
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
